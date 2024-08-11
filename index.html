@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <script defer src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script defer src="./js/bootstrap.min.js"></script>
+    <script defer src="./js/jquery-3.7.1.min.js"></script>
+    <script defer src="./slick/slick.min.js"></script>
+    <script defer src="/js/main.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./slick/slick.css" />
+    <link rel="stylesheet" href="./slick/slick-theme.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Leonardo Basilio</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md">
+        <div class="container-fluid mt-md-4 mb-md-4 mb-xs-4">
+          <a class="navbar-brand" href="index.html">&lt;L&gt;</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="#about">Sobre mim</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#projects">Projetos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#experience">Experiência</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#studies">Formação</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="english.html">EN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">PT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="about">
+        <div class="container mb-4">
+          <div class="row align-itens-center">
+            <div
+              class="col-sm-4 d-flex flex-column align-items-center justify-content-center"
+            >
+              <img
+                src="./assets/profile.jpeg"
+                alt="foto minha"
+                class="rounded-circle w-75"
+              />
+            </div>
+            <div class="col-sm-8 d-flex flex-column justify-content-center">
+              <div class="row">
+                <div>
+                  <h1>Leonardo Basilio</h1>
+                  <h2 id="typestring">
+                    <span id="typed"></span>
+                  </h2>
+                </div>
+                <div class="col-sm d-flex flex-column justify-content-center">
+                  <div>
+                    <ul class="list-unstyled d-flex gap-3 social-links">
+                      <li>
+                        <a
+                          href="https://www.linkedin.com/in/leonardo-basilio-709614119/"
+                          target="_blank"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="#3936f5"
+                            class="bi bi-linkedin"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+                            />
+                          </svg>
+                          LinkedIn</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://github.com/LeonardoBasilio"
+                          target="_blank"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="#3936f5"
+                            class="bi bi-github"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                            /></svg
+                          >Github</a
+                        >
+                      </li>
+                      <li class="d-flex">
+                        <a href="mailto:leobasilio2010@gmail.com"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="16"
+                            height="16"
+                            fill="#3936f5"
+                            class="bi bi-envelope-fill"
+                            viewBox="0 0 16 16"
+                          >
+                            <path
+                              d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"
+                            /></svg
+                          >leobasilio2010@gmail.com</a
+                        >
+                      </li>
+                      <li class="d-flex">
+                        <a href="https://dev.to/leonardobasilio/"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="20px"
+                            viewBox="0 -960 960 960"
+                            width="20px"
+                            fill="#3936f5"
+                          >
+                            <path
+                              d="M240-360h96q19 0 32.5-13.5T382-406v-148q0-19-13.5-32.5T336-600h-96v240Zm46-46v-148h50v148h-50Zm149 46h98v-46h-82v-52h52v-46h-52v-50h82v-46h-98q-13 0-21.5 8.5T405-570v180q0 13 8.5 21.5T435-360Zm206-1q13 0 22.5-8.5T676-391l56-209h-48l-43 164-43-164h-48l56 209q3 13 12.5 21.5T641-361ZM200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm0-560v560-560Z"
+                            /></svg
+                          >dev.to/leonardobasilio</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <p>
+                    Olá! Meu nome é Leonardo, sou especialista na área de dados. 
+                    Tenho dedicado minha carreira a gerar insights valiosos 
+                    e a modernizar as práticas de dados nas empresas em que atuei e continuo atuando.
+
+
+                  </p>
+                  <p>
+                    Tenho experiência em diversas ferramentas de visualização de dados: 
+                    <span class="highlight-text"
+                      >Tableau, Power BI, Apache Superset e Meta.
+                      </span><br>
+                    
+                    Na parte Engenharia de dados, atuo com diversas ferramentas e tecnologias:
+                    <span class="highlight-text"
+                    >Spark e Scala, Azure Synapse, SSIS, Alteryx, Pentaho, DBT, DeltaLake.
+                    </span><br><br>
+
+                    Além das competências técnicas, acredito fortemente no poder
+                    da colaboração e no trabalho em equipe. Durante minha
+                    trajetória profissional aprendi a ser comunicativo,
+                    organizado e resiliente. Gosto de me sentir desafiado e
+                    prezo por trabalhar em projetos nos quais acredito.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="container">
+          <div class="row align-items-start">
+            <!-- =========== DECOR ========== -->
+            <div class="col-sm-4 d-flex flex-column order-first order-md-2">
+              <p class="decor-text-side">&lt;/&gt;</p>
+            </div>
+            <!-- ============ CARROSSEL =========== -->
+            <div
+              class="col-sm-8 d-flex flex-column justify-content-center slick-carousel"
+            >
+              <div
+                class="card me-4 card-clickable"
+                data-bs-target="#modal-proj-1"
+              >
+                <img
+                  src="./assets/projeto-1.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Ambiente CDC</h5>
+                  <p class="card-text">
+                    Aplicação de um Ambiente CDC(Change Data Capture) Utilizando Debezium, Kafka, Kafuka UI, Spark, Zookeeper e SQL
+                  </p>
+                </div>
+              </div>
+              <div
+                class="card me-4 card-clickable"
+                data-bs-target="#modal-proj-5"
+              >
+                <img
+                  src="./assets/projeto-5.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">ENEM</h5>
+                  <p class="card-text">
+                    Projeto de dados baseado nos dados abertos do ENEM utilizando Spark, SQL e Tableau.<br /><br /><br />
+                  </p>
+                </div>
+              </div>
+              <div
+                class="card me-4 card-clickable"
+                data-bs-target="#modal-proj-2"
+              >
+                <img
+                  src="./assets/projeto-2.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">SUS</h5>
+                  <p class="card-text">
+                    Projeto de dados baseado nos dados abertos do SUS utilizando Spark, SQL e PowerBI.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="card me-4 card-clickable"
+                data-bs-target="#modal-proj-3"
+              >
+                <img
+                  src="./assets/projeto-3.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">COVID</h5>
+                  <p class="card-text">
+                    Projeto de dados baseado nos dados abertos em relação ao COVID utilizando Spark, SQL e Apache Superset.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="card me-4 card-clickable"
+                data-bs-target="#modal-proj-4"
+              >
+                <img
+                  src="./assets/projeto-4.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">VENDAS</h5>
+                  <p class="card-text">
+                    Modelo de Vendas utilizando Power BI, SQL e Pandas<br />
+                    <br />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== MODAIS ========== -->
+
+      <div class="modal" id="modal-proj-1" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Ambiente CDC</h5>
+            </div>
+            <div class="modal-body">
+              <p>
+                Aplicação de um Ambiente CDC(Change Data Capture) Utilizando Debezium, Kafka, Kafuka UI, Spark, Zookeeper e SQL
+              </p>
+              <p>
+                A solução contém uma arquitetura robusta: Os dados do
+                 são enviados para o CDC o Debzium faz a leitura e realiza o envio para o tópico em Kafka
+              </p>
+              <p>
+                A aplicação consome do CDC e envia para o Kafka
+              </p>
+              <a
+                href="https://github.com/leonardobasilio"
+                target="_blank"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#7A36BF"
+                  class="bi bi-github"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                  /></svg
+              ></a>
+            </div>
+            <div class="modal-footer">
+              <button class="my-btn" data-bs-dismiss="modal">X</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="modal-proj-5" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">ENEM</h5>
+            </div>
+            <div class="modal-body">
+              <p>
+                Projeto desenvolvido em Spark , SQL e Tableau disponível
+                <a
+                  href="https://public.tableau.com/app/profile/leonardo.basilio/viz/PAINELCOVID-19BRASIL_16430683202420/Painel1
+                  target="_blank"
+                  >nesse link</a
+                >
+              </p>
+              <a
+                href="https://github.com/leonardobasilio"
+                target="_blank"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#7A36BF"
+                  class="bi bi-github"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                  /></svg
+              ></a>
+            </div>
+            <div class="modal-footer">
+              <button class="my-btn" data-bs-dismiss="modal">X</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="modal-proj-2" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">SUS</h5>
+            </div>
+            <div class="modal-body">
+              <p>
+                Projeto realizado utilizando SQL Power BI
+              </p>
+              <p>
+                Foi utilizado SQL SERVER como banco de dados.
+              </p>
+              <a
+                href="https://github.com/leonardobasilio
+                target="_blank"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#7A36BF"
+                  class="bi bi-github"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                  /></svg
+              ></a>
+            </div>
+            <div class="modal-footer">
+              <button class="my-btn" data-bs-dismiss="modal">X</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="modal-proj-3" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">COVID</h5>
+            </div>
+            <div class="modal-body">
+              <p>
+                Desenvolvido um painel a respoeito do COVID
+              </p>
+              <p>
+                Foi utilizado Apache Superset como visualização de dados.
+              </p>
+              <a
+                href="https://github.com/leonardobasilio"
+                target="_blank"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#7A36BF"
+                  class="bi bi-github"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                  /></svg
+              ></a>
+            </div>
+            <div class="modal-footer">
+              <button class="my-btn" data-bs-dismiss="modal">X</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="modal-proj-4" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Vendas</h5>
+            </div>
+            <div class="modal-body">
+              <p>Modelo de portfolio responsável por vendas.</p>
+              <p>
+                O objetivo do projeto foi criar um dashboard de insights relacionado a vendas.
+              </p>
+              <a
+                href="https://github.com/leonardobasilio"
+                target="_blank"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#7A36BF"
+                  class="bi bi-github"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                  /></svg
+              ></a>
+            </div>
+            <div class="modal-footer">
+              <button class="my-btn" data-bs-dismiss="modal">X</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section id="experience">
+        <div class="container mb-4">
+          <div class="row align-items-top">
+            <div
+              class="col-sm-4 d-flex flex-column align-items-center order-first"
+            >
+              <p class="decor-text-side">{xp}</p>
+            </div>
+            <div class="col-sm-4 d-flex flex-column">
+              <p>
+                Iniciei minha vida profissional estagiando com dados em uma empresa de recuperação de crédito, estou na área há mais de 8 anos.
+                
+              </p>
+              <p>
+                Sou apaixonado por essa área, sempre buscando aprender sobre novas tecnologias e desenvolver projetos de código aberto para contribuir com a comunidade.
+              </p>
+            </div>
+            <div class="col-sm-4 d-flex flex-column">
+              <div class="row">
+                <ul class="list-unstyled">
+                  <li class="xp">
+                    <p class="company">
+                      Bem Promotora
+                      <span class="time">02/2022 até o momento</span>
+                    </p>
+                    <p>
+                      Especialista em dados. Atuação com Kafka, Synapse, Power BI, Apache Superset e SQL
+                    </p>
+                  </li>
+                  <li class="xp">
+                    <p class="company">
+                      Lider Assessoria
+                      <span class="time">02/2021 a 02/2022</span>
+                    </p>
+                    <p>Especialista em dados. Atuação com Power BI, Alteryx, Tableau e SQL </p>
+                  </li>
+                  <li class="xp">
+                    <p class="company">
+                      CRC - Central de Recuperação de Créditos
+                      <span class="time">09/2017 a 02/2021</span>
+                    </p>
+                    <p>
+                      Analista de Dados. Atuação com Tableau, Alteryx, Pentaho e SQL
+                    </p>
+                  </li>
+                  <!-- <a href="">Ver mais (abrir modal)</a> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="studies">
+        <div class="container">
+          <div class="row align-items-top">
+            <div class="col-sm-4 d-flex flex-column order-first order-md-2">
+              <p class="decor-text-side">.edu</p>
+            </div>
+            <div class="col-sm-4 d-flex flex-column">
+              <div class="row">
+                <h6>Graduação</h6>
+                <p style="margin-bottom: 0">
+                  Ciência de Dados
+                </p>
+                <p style="margin-bottom: 0; font-weight: bold">ESTÁCIO-MG</p>
+                <p>Concluído Jan/2024</p>
+
+                <p style="margin-bottom: 0">
+                  Ciência da Computação
+                </p>
+                <p style="margin-bottom: 0; font-weight: bold">IFCE</p>
+                <p>Em andamento</p>
+                  
+                <p style="margin-bottom: 0">
+                  Técnico em Informática
+                </p>
+                <p style="margin-bottom: 0; font-weight: bold">IFCE</p>
+                <p>Concluído Jun/17</p>
+                  
+              </div>
+              <div class="row">
+                <h6>Tecnologias</h6>
+                <ul class="list-unstyled d-flex flex-wrap gap-2">
+                  <li class="tag">Azure Synapse</li>
+                  <li class="tag">SISS</li>
+                  <li class="tag">Spark</li>
+                  <li class="tag">Scala</li>
+                  <li class="tag">SQL Server</li>
+                  <li class="tag">KAFKA</li>
+                  <li class="tag">Debezium</li>
+                  <li class="tag">PoweBI</li>
+                  <li class="tag">Apache Superset</li>
+                  <li class="tag">Tableau</li>
+                  <li class="tag">Alteryx</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-4 d-flex flex-column">
+              <div class="row">
+                <ul class="list-unstyled">
+                  <li class="xp">
+                    <h6>Bootcamp Data Science Aplicada</h6>
+                    <p style="margin-bottom: 0">
+                      <span style="font-weight: bolder">Alura</span>
+                      
+                    </p>
+                    <p>
+                      Desenvolvimento de um estudo aplicado ao COVID-19 utilizando Pandas, MatplotLib.
+                    </p>
+                  </li>
+                  <li class="xp">
+                    <h6>Imersão Azure Data Factory</h6>
+                    <p style="margin-bottom: 0">
+                      <span style="font-weight: bolder">Microsoft</span>
+                      
+                    </p>
+                    <p>
+                      Treinamento especializado para arquitetura de nuvem da Microsoft, Com foco no Data Factory.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-4 text-center">
+      <div class="container">
+        <p class="mb-0">
+          © 2024 Leonardo Basilio Oliveira. Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener('DOMContentLoaded', (event) => {
+        var typed = new Typed('#typed', {
+          strings: ['Engenheiro de Dados', 'Especialista em BI', 'SQL Server'],
+          typeSpeed: 50, // velocidade de digitação em milissegundos
+          backSpeed: 50, // velocidade de exclusão em milissegundos
+          loop: true, // se deve repetir após terminar
+        });
+      });
+    </script>
+  </body>
+</html>

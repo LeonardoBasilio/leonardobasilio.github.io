@@ -1,0 +1,256 @@
+:root {
+  --bg-color: #000;
+  --bg-img: linear-gradient(to right, #16012c, var(--bg-color), #16012c);
+  --border: 1px solid var(--dark-purple);
+  --text-color: #f0e1ff;
+  --highlight-color: #3936f5;
+  --dark-purple: #2e015a;
+  --hover-color: #3936f5;
+  --gradient: linear-gradient(
+    to right,
+    var(--highlight-color),
+    var(--dark-purple)
+  );
+  --font-text: 'IBM Plex Sans';
+  --font-highlight: 'IBM Plex Mono';
+  --border-radius-lg: 4px;
+  --font-weight-b: bold;
+}
+
+body {
+  background-color: var(--bg-color);
+  background-image: var(--bg-img);
+  font-family: var(--font-text);
+  color: var(--text-color);
+  cursor: default;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+a:hover {
+  color: var(--hover-color);
+}
+
+p {
+  a {
+    color: var(--highlight-color);
+  }
+}
+
+.navbar-toggler {
+  --bs-navbar-color: var(--highlight-color);
+  --bs-navbar-toggler-border-color: transparent;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-collapse {
+  background-image: linear-gradient(
+    to right,
+    rgba(22, 1, 44, 0.7),
+    rgba(0, 0, 0, 0.7),
+    rgba(22, 1, 44, 0.7)
+  );
+}
+
+nav {
+  border-bottom: var(--border);
+  margin-bottom: 2rem;
+  height: 3rem;
+}
+
+header a {
+  font-family: var(--font-highlight);
+  font-weight: var(--font-weight-b);
+  color: var(--highlight-color) !important;
+}
+
+header a:hover {
+  color: var(--white) !important;
+}
+
+a {
+  font-weight: bold;
+  margin: 0;
+  display: flex;
+
+  align-items: center;
+
+  svg {
+    margin-right: 6px;
+  }
+}
+
+h1 {
+  color: var(--text-color);
+  font-family: var(--font-text);
+  font-weight: var(--font-weight-b);
+  margin-left: 0;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-family: var(--font-highlight);
+  font-size: 1.5rem;
+  color: var(--highlight-color);
+  margin-left: 0;
+  text-align: left;
+}
+
+h5,
+h6 {
+  color: var(--highlight-color);
+  font-family: var(--font-highlight);
+  font-weight: var(--font-weight-b);
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+#email {
+  font-weight: var(--font-weight-b);
+}
+
+.highlight-text {
+  font-weight: var(--font-weight-b);
+  color: var(--highlight-color);
+}
+
+.decor-text-side {
+  background-image: var(--gradient);
+  font-family: var(--font-highlight);
+  font-weight: var(--font-weight-b);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 8rem;
+  flex-grow: 1;
+  display: flex;
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+}
+
+@media (max-width: 768px) {
+  .decor-text-side {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .decor-text-side::after {
+    font-size: 2rem;
+    margin-left: 0.5rem;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .decor-text-side {
+    font-size: 4rem;
+  }
+}
+
+.xp {
+  border: var(--border);
+  border-radius: --border-radius-lg;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.xp p {
+  margin-bottom: 0;
+  transition: 0.5s;
+}
+
+.xp:hover {
+  box-shadow: 1px 1px 2px #3936f5;
+  transition: 0.5s;
+}
+.xp span {
+  font-weight: normal;
+  font-size: 0.75rem;
+}
+
+.company {
+  font-family: var(--font-highlight);
+  font-weight: var(--font-weight-b);
+}
+
+.card {
+  background-color: transparent;
+  border: var(--border);
+  cursor: pointer;
+  color: var(--text-color);
+  transition: 0.5s;
+}
+
+.card:hover {
+  background-color: #16012c;
+}
+
+.card-title {
+  color: var(--highlight-color);
+  font-weight: var(--font-weight-b);
+}
+
+.card-img-top {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.tag {
+  color: var(--text-color);
+  padding: 0.25rem 0.5rem;
+  border: var(--border);
+  border-radius: var(--border-radius-lg);
+}
+
+.tag:hover {
+  box-shadow: 1px 1px 2px #3936f5;
+}
+
+footer {
+  border: var(--border);
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-image: var(--bg-img);
+
+  border: var(--border);
+}
+
+button {
+  background-color: transparent;
+  color: var(--highlight-color);
+  cursor: pointer;
+  border: none;
+  border-radius: var(--border-radius-lg);
+  font-family: var(--font-highlight);
+  font-weight: var(--font-weight-b);
+}
+
+button:hover {
+  color: var(--hover-color);
+}
+svg:hover path {
+  fill: var(--hover-color);
+}

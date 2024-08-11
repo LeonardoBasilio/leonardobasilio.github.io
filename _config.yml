@@ -1,0 +1,10 @@
+theme: jekyll-theme-primer
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
