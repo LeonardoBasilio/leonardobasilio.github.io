@@ -75,7 +75,7 @@
               class="col-sm-4 d-flex flex-column align-items-center justify-content-center"
             >
               <img
-                src="./assets/profile.jpeg"
+                src="./assets/profile_new.jpeg"
                 alt="my photo"
                 class="rounded-circle w-75"
               />
@@ -162,25 +162,18 @@
                     </ul>
                   </div>
                   <p>
-                    Hello! My name is Leonardo, and I am a data specialist. 
-                    I have dedicated my career to generating valuable insights 
-                    and modernizing data practices in the companies I've worked with and continue to work with.
+                    Senior Analytics Engineer with 8+ years of experience building scalable data platforms end-to-end — from ingestion and transformation to data modeling, BI delivery and production support.
                   </p>
                   <p>
-                    I have experience in various data visualization tools: 
-                    <span class="highlight-text"
-                      >Tableau, Power BI, Apache Superset, and Meta.
-                      </span><br>
-                    
-                    In the area of data engineering, I work with various tools and technologies:
-                    <span class="highlight-text"
-                    >Spark and Scala, Azure Synapse, SSIS, Alteryx, Pentaho, DBT, DeltaLake.
-                    </span><br><br>
-
-                    In addition to technical skills, I strongly believe in the power of 
-                    collaboration and teamwork. Throughout my professional journey, I have 
-                    learned to be communicative, organized, and resilient. I enjoy feeling challenged and 
-                    value working on projects that I believe in.
+                    I specialize in
+                    <span class="highlight-text">Data Lakehouse and Medallion Architecture</span>,
+                    modernizing legacy DW/SSIS workloads into cloud data platforms. At Bem Promotora, I reduced pipeline processing time by ~70% and daily cost by ~53% through optimizations across Azure Synapse, Azure Data Factory and PySpark.
+                  </p>
+                  <p>
+                    Core stack:
+                    <span class="highlight-text">SQL, Python, PySpark, Databricks, Delta Lake, Azure Synapse, Apache Kafka, Debezium and Amazon S3</span> —
+                    complemented by BI delivery in Power BI, Tableau and Apache Superset.
+                    I act as a technical reference and mentor for data teams, translating business needs into reliable, governed and scalable analytical solutions.
                   </p>
                 </div>
               </div>
@@ -278,6 +271,22 @@
                   <p class="card-text">
                     Sales Model using Power BI, SQL, and Pandas<br />
                     <br />
+                  </p>
+                </div>
+              </div>
+              <div
+                class="card me-4 card-clickable"
+                data-bs-target="#modal-proj-6"
+              >
+                <img
+                  src="./assets/arquitetura.png"
+                  class="card-img-top"
+                  alt="Kafka Amazon S3 Architecture"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Kafka + Amazon S3 Integration</h5>
+                  <p class="card-text">
+                    End-to-end real-time data pipeline: PostgreSQL → Kafka Connect → Apache Kafka → ksqlDB → Amazon S3.
                   </p>
                 </div>
               </div>
@@ -471,6 +480,44 @@
         </div>
       </div>
 
+      <div class="modal" id="modal-proj-6" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Kafka + Amazon S3 Integration</h5>
+            </div>
+            <div class="modal-body">
+              <p>
+                End-to-end real-time data ingestion pipeline built with Apache Kafka, Kafka Connect, PostgreSQL, ksqlDB, and Amazon S3 — fully orchestrated with Docker Compose.
+              </p>
+              <p>
+                Data is captured from PostgreSQL via JDBC Source Connector and published to a Kafka topic. ksqlDB then processes the stream in real time — filtering records, classifying by age group, and generating windowed aggregations. All topics are delivered to an Amazon S3 data lake via S3 Sink Connector in JSON and Avro formats.
+              </p>
+              <img src="./assets/arquitetura.png" alt="Architecture diagram" style="width:100%; border-radius: 6px; margin-bottom: 1rem;" />
+              <p><strong>Technologies:</strong> Apache Kafka · Kafka Connect · PostgreSQL · ksqlDB · Amazon S3 · Schema Registry · Avro · Docker Compose · Python · AWS IAM</p>
+              <a
+                href="https://github.com/LeonardoBasilio/IntegracaoApacheKafkaComAmazonS3"
+                target="_blank"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#7A36BF"
+                  class="bi bi-github"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                  /></svg
+                > View on GitHub</a>
+            </div>
+            <div class="modal-footer">
+              <button class="my-btn" data-bs-dismiss="modal">X</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <section id="experience">
         <div class="container mb-4">
           <div class="row align-items-top">
@@ -555,16 +602,22 @@
                 <h6>Technologies</h6>
                 <ul class="list-unstyled d-flex flex-wrap gap-2">
                   <li class="tag">Azure Synapse</li>
-                  <li class="tag">SISS</li>
+                  <li class="tag">Databricks</li>
+                  <li class="tag">Amazon S3</li>
+                  <li class="tag">AWS</li>
+                  <li class="tag">Apache Kafka</li>
+                  <li class="tag">Kafka Connect</li>
+                  <li class="tag">ksqlDB</li>
+                  <li class="tag">Debezium</li>
                   <li class="tag">Spark</li>
                   <li class="tag">Scala</li>
                   <li class="tag">SQL Server</li>
-                  <li class="tag">KAFKA</li>
-                  <li class="tag">Debezium</li>
                   <li class="tag">PowerBI</li>
                   <li class="tag">Apache Superset</li>
                   <li class="tag">Tableau</li>
                   <li class="tag">Alteryx</li>
+                  <li class="tag">DBT</li>
+                  <li class="tag">DeltaLake</li>
                 </ul>
               </div>
             </div>
@@ -609,7 +662,7 @@
     <script>
       document.addEventListener('DOMContentLoaded', (event) => {
         var typed = new Typed('#typed', {
-          strings: ['Data Engineer', 'BI Specialist', 'SQL Server'],
+          strings: ['Analytics Engineer', 'Data Engineer', 'BI Specialist'],
           typeSpeed: 50, // typing speed in milliseconds
           backSpeed: 50, // deletion speed in milliseconds
           loop: true, // whether to loop after finishing
