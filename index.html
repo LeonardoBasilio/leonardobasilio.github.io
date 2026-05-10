@@ -75,7 +75,7 @@
               class="col-sm-4 d-flex flex-column align-items-center justify-content-center"
             >
               <img
-                src="./assets/profile.jpeg"
+                src="./assets/profile_new.jpeg"
                 alt="foto minha"
                 class="rounded-circle w-75"
               />
@@ -162,28 +162,18 @@
                     </ul>
                   </div>
                   <p>
-                    Olá! Meu nome é Leonardo, sou especialista na área de dados. 
-                    Tenho dedicado minha carreira a gerar insights valiosos 
-                    e a modernizar as práticas de dados nas empresas em que atuei e continuo atuando.
-
-
+                    Analytics Engineer Sênior com mais de 8 anos de experiência construindo plataformas de dados escaláveis de ponta a ponta — da ingestão e transformação até a modelagem, entrega em BI e suporte em produção.
                   </p>
                   <p>
-                    Tenho experiência em diversas ferramentas de visualização de dados: 
-                    <span class="highlight-text"
-                      >Tableau, Power BI, Apache Superset e Meta.
-                      </span><br>
-                    
-                    Na parte Engenharia de dados, atuo com diversas ferramentas e tecnologias:
-                    <span class="highlight-text"
-                    >Spark e Scala, Azure Synapse, SSIS, Alteryx, Pentaho, DBT, DeltaLake.
-                    </span><br><br>
-
-                    Além das competências técnicas, acredito fortemente no poder
-                    da colaboração e no trabalho em equipe. Durante minha
-                    trajetória profissional aprendi a ser comunicativo,
-                    organizado e resiliente. Gosto de me sentir desafiado e
-                    prezo por trabalhar em projetos nos quais acredito.
+                    Especializado em
+                    <span class="highlight-text">Arquitetura Lakehouse e Medallion</span>,
+                    com histórico de modernização de legados DW/SSIS para plataformas cloud. Na Bem Promotora, reduzi o tempo de processamento dos pipelines em ~70% e o custo diário em ~53% com otimizações em Azure Synapse, Azure Data Factory e PySpark.
+                  </p>
+                  <p>
+                    Stack principal:
+                    <span class="highlight-text">SQL, Python, PySpark, Databricks, Delta Lake, Azure Synapse, Apache Kafka, Debezium e Amazon S3</span> —
+                    complementada por entrega de BI em Power BI, Tableau e Apache Superset.
+                    Atuo como referência técnica e mentor do time de dados, traduzindo necessidades de negócio em soluções analíticas confiáveis, governadas e escaláveis.
                   </p>
                 </div>
               </div>
@@ -215,40 +205,7 @@
                 <div class="card-body">
                   <h5 class="card-title">Ambiente CDC</h5>
                   <p class="card-text">
-                    Aplicação de um Ambiente CDC(Change Data Capture) Utilizando Debezium, Kafka, Kafuka UI, Spark, Zookeeper e SQL. <br />
-                  </p>
-                </div>
-              </div>
-              <!--
-              <div
-                class="card me-4 card-clickable"
-                data-bs-target="#modal-proj-5"
-              >
-                <img
-                  src="./assets/projeto-5.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">ENEM</h5>
-                  <p class="card-text">
-                    Projeto de dados baseado nos dados abertos do ENEM utilizando Spark, SQL e Tableau.<br />
-                  </p>
-                </div>
-              </div>
-              <div
-                class="card me-4 card-clickable"
-                data-bs-target="#modal-proj-2"
-              >
-                <img
-                  src="./assets/projeto-2.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title">SUS</h5>
-                  <p class="card-text">
-                    Projeto de dados baseado nos dados abertos do SUS utilizando Spark, SQL e PowerBI.<br />
+                    Aplicação de um Ambiente CDC (Change Data Capture) utilizando Debezium, Kafka, Kafka UI, Spark, Zookeeper e SQL.
                   </p>
                 </div>
               </div>
@@ -256,7 +213,6 @@
                 class="card me-4 card-clickable"
                 data-bs-target="#modal-proj-3"
               >
-              -->
                 <img
                   src="./assets/projeto-3.jpg"
                   class="card-img-top"
@@ -265,31 +221,28 @@
                 <div class="card-body">
                   <h5 class="card-title">COVID</h5>
                   <p class="card-text">
-                    Projeto de dados baseado nos dados abertos em relação ao COVID utilizando Spark, SQL e Apache Superset.<br />
+                    Projeto de dados baseado nos dados abertos em relação ao COVID utilizando Spark, SQL e Apache Superset.
                   </p>
                 </div>
               </div>
               <div
                 class="card me-4 card-clickable"
-                data-bs-target="#modal-proj-4"
+                data-bs-target="#modal-proj-6"
               >
-              <!--
                 <img
-                  src="./assets/projeto-4.jpg"
+                  src="./assets/arquitetura.png"
                   class="card-img-top"
-                  alt="..."
+                  alt="Arquitetura Kafka Amazon S3"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">VENDAS</h5>
+                  <h5 class="card-title">Integração Kafka + Amazon S3</h5>
                   <p class="card-text">
-                    Modelo de Vendas utilizando Power BI, SQL e Pandas.<br />
-                    <br />
+                    Pipeline de ingestão em tempo real: PostgreSQL → Kafka Connect → Apache Kafka → ksqlDB → Amazon S3.
                   </p>
                 </div>
-               -->
               </div>
             </div>
-           
+
           </div>
         </div>
       </section>
@@ -480,6 +433,44 @@
         </div>
       </div>
 
+      <div class="modal" id="modal-proj-6" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Integração Apache Kafka + Amazon S3</h5>
+            </div>
+            <div class="modal-body">
+              <p>
+                Pipeline completo de ingestão de dados em tempo real com Apache Kafka, Kafka Connect, PostgreSQL, ksqlDB e Amazon S3 — orquestrado via Docker Compose.
+              </p>
+              <p>
+                Os dados são capturados do PostgreSQL via JDBC Source Connector e publicados em tópicos Kafka. O ksqlDB processa os streams em tempo real — filtrando registros, classificando por faixa etária e gerando agregações por janela temporal. Todos os tópicos são entregues ao data lake no Amazon S3 via S3 Sink Connector, nos formatos JSON e Avro.
+              </p>
+              <img src="./assets/arquitetura.png" alt="Diagrama de arquitetura" style="width:100%; border-radius: 6px; margin-bottom: 1rem;" />
+              <p><strong>Tecnologias:</strong> Apache Kafka · Kafka Connect · PostgreSQL · ksqlDB · Amazon S3 · Schema Registry · Avro · Docker Compose · Python · AWS IAM</p>
+              <a
+                href="https://github.com/LeonardoBasilio/IntegracaoApacheKafkaComAmazonS3"
+                target="_blank"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="#7A36BF"
+                  class="bi bi-github"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                  /></svg
+                > Ver no GitHub</a>
+            </div>
+            <div class="modal-footer">
+              <button class="my-btn" data-bs-dismiss="modal">X</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <section id="experience">
         <div class="container mb-4">
           <div class="row align-items-top">
@@ -565,16 +556,22 @@
                 <h6>Tecnologias</h6>
                 <ul class="list-unstyled d-flex flex-wrap gap-2">
                   <li class="tag">Azure Synapse</li>
-                  <li class="tag">SISS</li>
+                  <li class="tag">Databricks</li>
+                  <li class="tag">Amazon S3</li>
+                  <li class="tag">AWS</li>
+                  <li class="tag">Apache Kafka</li>
+                  <li class="tag">Kafka Connect</li>
+                  <li class="tag">ksqlDB</li>
+                  <li class="tag">Debezium</li>
                   <li class="tag">Spark</li>
                   <li class="tag">Scala</li>
                   <li class="tag">SQL Server</li>
-                  <li class="tag">KAFKA</li>
-                  <li class="tag">Debezium</li>
-                  <li class="tag">PoweBI</li>
+                  <li class="tag">PowerBI</li>
                   <li class="tag">Apache Superset</li>
                   <li class="tag">Tableau</li>
                   <li class="tag">Alteryx</li>
+                  <li class="tag">DBT</li>
+                  <li class="tag">DeltaLake</li>
                 </ul>
               </div>
             </div>
@@ -619,7 +616,7 @@
     <script>
       document.addEventListener('DOMContentLoaded', (event) => {
         var typed = new Typed('#typed', {
-          strings: ['Engenheiro de Dados', 'Especialista em BI', 'SQL Server'],
+          strings: ['Analytics Engineer', 'Engenheiro de Dados', 'Especialista em BI'],
           typeSpeed: 50, // velocidade de digitação em milissegundos
           backSpeed: 50, // velocidade de exclusão em milissegundos
           loop: true, // se deve repetir após terminar
