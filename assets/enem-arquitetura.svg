@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 280" width="440" height="280" role="img" aria-label="Arquitetura do projeto ENEM: microdados do INEP, processamento em PySpark, Data Warehouse snowflake em SQL Server e dashboards no Apache Superset">
+  <defs>
+    <marker id="enem-arrow" markerWidth="9" markerHeight="9" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 z" fill="#3936f5" />
+    </marker>
+  </defs>
+
+  <g font-family="IBM Plex Mono, IBM Plex Sans, monospace" text-anchor="middle">
+    <!-- fonte -->
+    <rect x="60" y="8" width="320" height="50" rx="8" fill="#16012c" stroke="#3936f5" stroke-width="1.2" />
+    <text x="220" y="29" font-size="13" fill="#f0e1ff">Microdados do ENEM · INEP</text>
+    <text x="220" y="46" font-size="10" fill="#9b8fc7">CSV 2019 · 2020 · 2021 · 2022</text>
+
+    <!-- processamento -->
+    <rect x="60" y="80" width="320" height="50" rx="8" fill="#16012c" stroke="#3936f5" stroke-width="1.2" />
+    <text x="220" y="101" font-size="13" fill="#f0e1ff">PySpark + Jupyter Notebook</text>
+    <text x="220" y="118" font-size="10" fill="#9b8fc7">limpeza, tipagem e agregação</text>
+
+    <!-- data warehouse -->
+    <rect x="60" y="152" width="320" height="50" rx="8" fill="#16012c" stroke="#3936f5" stroke-width="1.2" />
+    <text x="220" y="173" font-size="13" fill="#f0e1ff">SQL Server · DW Snowflake</text>
+    <text x="220" y="190" font-size="10" fill="#9b8fc7">FATO_ENEM_AGREGATE + 10 dimensões</text>
+
+    <!-- bi -->
+    <rect x="60" y="224" width="320" height="50" rx="8" fill="#16012c" stroke="#3936f5" stroke-width="1.2" />
+    <text x="220" y="245" font-size="13" fill="#f0e1ff">Apache Superset</text>
+    <text x="220" y="262" font-size="10" fill="#9b8fc7">painéis de inscritos e notas</text>
+  </g>
+
+  <g stroke="#3936f5" stroke-width="1.5" marker-end="url(#enem-arrow)">
+    <line x1="220" y1="58" x2="220" y2="74" />
+    <line x1="220" y1="130" x2="220" y2="146" />
+    <line x1="220" y1="202" x2="220" y2="218" />
+  </g>
+
+  <g font-family="IBM Plex Mono, IBM Plex Sans, monospace" font-size="9" fill="#9b8fc7">
+    <text x="8" y="145" transform="rotate(-90 8 145)" text-anchor="middle">Docker Compose</text>
+    <text x="432" y="145" transform="rotate(90 432 145)" text-anchor="middle">Python · SQL</text>
+  </g>
+</svg>
